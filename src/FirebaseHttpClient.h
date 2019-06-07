@@ -33,11 +33,13 @@ class FirebaseHttpClient {
 
   virtual std::string errorToString(int error_code) = 0;
 
+  virtual bool connected() = 0;
+
  protected:
   static const uint16_t kFirebasePort = 443;
 };
 
 static const char kFirebaseFingerprint[] =
-      "9A E1 A3 B7 88 E0 C9 A3 3F 13 72 4E B5 CB C7 27 41 B2 0F 6A";
+      "B6 F5 80 C8 B1 DA 61 C1 07 9D 80 42 D8 A9 1F AF 9F C8 96 7D"; // 2019-04
 
 #endif  // FIREBASE_HTTP_CLIENT_H
